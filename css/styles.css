@@ -1,0 +1,1152 @@
+@font-face {
+    font-family: "ArticulatLight";
+    src: url("fonts/ArticulatCFLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ArticulatBold";
+    src: url("fonts/ArticulatCFBold.ttf") format("truetype");
+}
+
+/* Reset aur General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0.5px;
+    background: transparent; /* make scrollbar transparent */ 
+}
+
+a { text-decoration: none; cursor: pointer; }
+
+body {
+    font-family: "ArticulatBold";
+    background-image: url("https://euapm.eu/wp-content/uploads/2023/11/object_1.svg");
+    background-repeat: no-repeat;
+    /* Background color 1 */
+    color: #333333;
+    /* Text color 1 */
+    overflow-x: hidden;
+    letter-spacing: .1cap;
+
+}
+
+span {
+    font-family: 'Sofia';
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    /* background-color: rgba(159, 177, 184, 0.5); */
+    /* Background color #9fb1b8 with slight opacity */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #011f26;
+    /* Text color 2 */
+}
+
+.logo i {
+    margin-right: 10px;
+    color: #193046;
+    /* Green se replace kiya #193046 */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #011f26;
+    /* Navigation ka color #f9f9f9 se #011f26 kiya */
+    font-weight: 900;
+    transition: color 0.3s ease;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+nav ul li a:hover {
+    color: #477198;
+    /* Hover wala color same rakha */
+}
+
+.hero-menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: row;
+    /* background-color: rgba(159, 177, 184, 0.5); */
+    /* Background color #9fb1b8 with slight opacity */
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-menu-list a {
+    text-decoration: none;
+    color: #333333;
+    /* Text color 2 */
+    font-weight: 900;
+    transition: color 0.3s ease;
+}
+
+.hero-menu-list a:hover {
+    color: #326594;
+}
+
+.hero-menu-list li {
+    text-decoration: none;
+    color: #343434;
+    /* Text color 2 */
+    font-weight: 200;
+    transition: transform 0.3s ease;
+}
+
+.hero-menu-list li:hover {
+    transform: translateX(15px);
+    /* Hover effect for menu items */
+}
+
+.tooltip-div {
+    position: absolute;
+    background-color: #193046;
+    /* Green se replace kiya #193046 */
+    color: #f9f9f9;
+    /* Background color 4 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 3;
+    /* Tooltip ko sabse upar rakha */
+    visibility: hidden;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.update-banner {
+    color: #f9f9f9;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 4;
+    width: 50%;
+}
+
+.update-banner i {
+    color: #ff0000;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Disclaimer Ticker Styles */
+.disclaimer-ticker {
+    padding: 10px 0;
+    overflow: hidden; /* Hide overflow for scrolling effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 16px;
+    width: 100%;
+}
+
+.ticker-content {
+    display: inline-block;
+    animation: scroll 30s linear infinite; /* Reduced duration for faster feel */
+}
+
+.ticker-content span.ticker-text {
+    margin-right: 20px; /* Space between repeated text */
+}
+
+.ticker-text {
+    background-color: rgba(193, 206, 212, 0.15);
+    /* Green se replace kiya #193046 */
+    width: 200px;
+    padding: 10px;
+    font-weight: 600;
+    font-family: "ArticulatLight";
+    /* Font family change kiya */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(40%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to off-screen left */
+    }
+}
+
+/* Pause animation on hover */
+.ticker-content:hover {
+    animation-play-state: paused;
+}
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Slideshow ko sabse neeche rakha */
+    background-color: #000000;
+    /* Black background add kiya */
+}
+
+/* Individual Slide Styling */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+/* Gradient Overlay for Readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(193, 206, 212, 0.3), rgba(193, 206, 212, 0));
+    /* Same gradient overlay */
+    z-index: 2;
+}
+
+
+/* Hero Content Styling */
+.hero-content {
+    position: relative;
+    max-width: 1200px;
+    padding: 20px;
+    z-index: 3;
+}
+
+/* CSS Animation for Slideshow */
+.slide:nth-child(1) {
+    animation: fade 20s infinite;
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation: fade 20s infinite;
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    animation: fade 20s infinite;
+    animation-delay: 10s;
+}
+
+.slide:nth-child(4) {
+    animation: fade 20s infinite;
+    animation-delay: 15s;
+}
+
+/* Keyframes for Fade Animation */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    /* H1 ka color #000000 se #9fb1b8 kiya */
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5);
+    /* Text shadow for depth */
+    transition: all 0.3s ease;
+}
+
+/* H1 ke liye Hover aur Mouse Down Animation */
+.hero-content h1:hover {
+    text-shadow: 0 0 15px rgba(238, 238, 238, 0.8), 0 0 30px rgba(126, 192, 253, 0.5);
+    /* Glow effect me bhi green ko #193046 se replace kiya */
+    color: #e0e0e0;
+    /* Green se replace kiya #193046 */
+}
+
+.hero-content h1:active {
+    transform: scale(0.95);
+    /* Mouse down pe scale down effect */
+    text-shadow: 0 0 20px rgba(25, 48, 70, 1), 0 0 40px rgba(25, 48, 70, 0.8);
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #e8e8e8;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e8e8e8;
+    /* Background color 4 as text color */
+}
+
+.countdown-timer {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #e8e8e8;
+    /* Green se replace kiya #193046 */
+}
+
+.countdown-timer span {
+    background-color: rgba(164, 252, 255, 0.5);
+    /* Background color 5 with 50% opacity */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    /* Green se replace kiya #193046 */
+    color: #1b4961;
+    /* Background color 4 */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary i {
+    margin-right: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #d7ecff;
+    /* Slightly darker shade of #193046 */
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #e4e4e4;
+    /* Background color 4 */
+    padding: 12px 30px;
+    border: 2px solid #e4e4e4;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary i {
+    margin-right: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: #e4e4e4;
+    /* Background color 4 */
+    color: #011f26;
+    /* Text color 2 */
+}
+
+/* About Section Styling */
+.about {
+    padding: 80px 50px;
+    /* background-color: #f1f1f1; */
+    /* Background color 4 */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+.about-venue {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-venue {
+        flex-direction: column;
+        align-items: center;
+    }
+    .venue-icon img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (width: 1024px) {
+    .venue-icon{
+        flex-direction: row;
+        text-align: center;
+    }
+    .venue-icon img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+.about-icon i {
+    font-size: 60px;
+    color: #a5a692;
+    /* Green se replace kiya #193046 */
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #a5a692;
+    /* Text color 4 */
+}
+
+.about-text p {
+    font-family: "ArticulatLight";
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: 100;
+    /* Text color 1 */
+}
+
+.btn-more {
+    background-color: transparent;
+    color: rgb(165,166,146);
+    /* Text color 4 */
+    padding: 10px 20px;
+    border: 2px solid #a5a692;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-more i {
+    margin-right: 8px;
+}
+
+.btn-more:hover {
+    background-color: #a5a692;
+    /* Text color 4 */
+    color: #f9f9f9;
+    /* Background color 4 */
+}
+
+/* Organisers Section Styling */
+.organisers {
+    padding: 80px 50px;
+    /* background-color: rgba(239, 239, 239, 0.5); */
+    /* Background color 5 with 50% opacity */
+    text-align: center;
+}
+
+.organisers h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #011f26;
+    /* Text color 2 */
+}
+
+.organiser-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.organiser-card {
+    /* background-color: #f9f9f9; */
+    /* Background color 4 */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.organiser-card:hover {
+    transform: translateY(-10px);
+}
+
+.organiser-card i {
+    font-size: 40px;
+    color: #193046;
+    /* Green se replace kiya #193046 */
+    margin-bottom: 15px;
+}
+
+.organiser-card h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #011f26;
+    /* Text color 2 */
+}
+
+.organiser-card p {
+    font-family: "ArticulatLight";
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    /* Text color 1 */
+}
+
+/* highlights styling */
+.highlights {
+    text-align: left;
+    color: #193046;
+    background-color: transparent;
+    border-radius: 45px 0 45px 0;
+}
+
+.slider-container-light::-webkit-scrollbar {
+    width: 0.1px; /* make scrollbar thin */
+    opacity: 0.5;
+    border-radius: 25px;
+    background: #193046; /* make scrollbar transparent */ 
+}
+
+.slider-container-light::-webkit-scrollbar-thumb {
+    background: #1b4961;
+    border-radius: 25px;
+}
+
+.highlights h3 { color: #193046; }
+
+.slider-container-light {
+  width: 100%;
+  padding: 10px;
+  height: 250px; /* Adjust height as needed */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  user-select: none;
+}
+
+.slider-light {
+    display: flex;
+    cursor: grab;
+}
+
+.slide-light p {
+    font-family: "ArticulatLight";
+    font-size: 16px;
+    color: #333333;
+    /* Text color 1 */
+    gap: 10px;
+    padding: 20px 25px;
+}
+
+.slider-light.dragging-light {
+  cursor: grabbing;
+  transition: none;
+}
+
+.slide-light {
+    flex: 0 0 auto;
+    padding: 8px;
+    border-radius: 20px;
+    width: 400px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between slides */
+    background-color: rgba(193, 206, 212, 0.3);
+    transition: 0.8s ease box-shadow;
+}
+
+.slide-light:hover {
+    box-shadow: 0 0 15px #193046, 0 0 15px #193046, 0 0 15px #193046;
+}
+
+
+/* Speaker Section Styling */
+.about-speakers {
+    padding: 50px 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(202, 202, 202, 0.5));
+    /* Background color 5 with 50% opacity */
+    text-align: center;
+    border-radius: 0 0 200px 200px;
+}
+
+.about-speakers h3 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #011f26;
+    /* Text color 2 */
+}
+
+.speaker-cards {
+    background: transparent;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.speaker-card {
+    border-radius: 20px 35px / 20px 35px;
+    /* Rounded corners for speaker cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* White background for speaker cards */
+    padding: 20px;
+    margin: 25px;
+    opacity: .89;
+    transition: 0.5s ease;
+}
+
+.speaker-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #115463;
+    /* Text color 2 */
+    transition: 0.5s ease-out;
+}
+
+.speaker-card h4:hover {
+    text-shadow: 0 10px 25px rgba(4, 163, 249, 0.5);
+}
+
+.speaker-card:hover {
+    transform: translateY(10px);
+    /* Hover effect for speaker cards */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    /* Text shadow on hover */
+}
+
+.speaker-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Conference Section Styling */
+.conference-theme {
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.conference-theme h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-align: left;
+    color: #011f26;
+    /* Text color 2 */
+}
+
+.conference-theme p {
+    font-family: "ArticulatLight";
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #333333;
+    /* Text color 1 */
+}
+
+.theme-table {
+    max-width: 1200px; /* Limit max width for large screens */
+    margin: 0 200px 0; /* Center the table */
+    padding: 20px;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 20px; /* Space between rows */
+    justify-content: center; /* Center cards horizontally */
+}
+
+/* Individual theme card */
+.row div {
+    /* background: #ffffff; White background for cards */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure content stays within rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    flex: 1 1 calc(50% - 10px); /* Two cards per row, accounting for gap */
+    max-width: calc(50% - 10px); /* Ensure max width for two-column layout */
+    text-align: center; /* Center text and image */
+    cursor: pointer; /* Indicate interactivity */
+}
+
+/* Hover effect for cards */
+.row div:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Image styling */
+.row div img {
+    width: 100%; /* Full width of card */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop image to fit without distortion */
+    display: block; /* Remove inline spacing */
+}
+
+/* Text styling */
+.image-text {
+    font-family: "ArticulatBold";
+    font-size: 1.1rem; /* Readable font size */
+    font-weight: 600; /* Bold text */
+    color: #333333; /* Dark text for contrast */
+    padding: 15px; /* Space around text */
+    margin: 0; /* Remove default margins */
+    background: #f8f9fa; /* Light background for text area */
+    min-height: 60px; /* Ensure consistent height */
+    display: flex; /* Center text vertically */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+}
+
+.image-text:hover {
+    text-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+    color: #193046; /* Change text color on hover */
+}
+
+.over-mission {
+    position: relative;
+    width: 100%;
+    background-color: #a5a692;
+    padding: 30px;
+}
+
+.over-mission h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #193046;
+    margin-bottom: 20px;
+}
+
+.over-mission p {
+    font-family: "ArticulatLight";
+    font-size: 18px;
+    color: #333333;
+    /* Text color 1 */
+}
+
+/* Footer Styling */
+footer {
+    font-family: "ArticulatLight";
+    padding: 60px 90px;
+    background-color: #003c53;
+    /* Background color 3 */
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Background color 4 */
+}
+
+footer hr {
+    width: 2px; height: 35rem; transform: rotate(180deg); background-color: #a5a692; border: none;
+}
+
+.logo-area {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logo-area p {
+    font-family: "ArticulatLight";
+    font-size: 18px;
+    font-weight: 100;
+    word-spacing: .3cap ;
+    color: #f9f9f9;
+    text-align: justify;
+    /* Background color 4 */
+    margin-bottom: 10px;
+}
+
+.logo-area img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.social-links-area {
+    padding-left: 10%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-links-area p {
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.social-links-area h1 {
+    font-family: "ArticulatBold";
+    font-size: 2rem;
+    color: #a5a692;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.email-btn {
+    background-color: transparent;
+    color: #a5a692;
+    margin: 30px;
+    border-radius: 25px;
+    border: 1px solid #a5a692;
+    padding: 10px 20px;
+    font-family: "ArticulatBold";
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.email-btn:hover {
+    background-color: #a5a692;
+    color: #193046;
+    /* Background color 4 */
+}
+
+.office-addr {
+    padding-left: 50px;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.office-addr h2 {
+    margin: 10px;
+    font-weight: 900;
+}
+
+.media-centres a {
+    padding: 10px 10px 20px 20px;
+    gap: 20px;
+    font-family: "ArticulatBold";
+    font-weight: 200;
+    transition: .3s ease;
+}
+
+.media-centres a:hover {
+    color: #a5a692;
+
+}
+
+.box-links-follow {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+}
+
+.box-links-follow section p {
+    margin-top: 20%;
+}
+
+.go-back-links {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.go-back-links a {
+    text-decoration: none;
+    color: #a5a692;
+    font-family: "ArticulatBold";
+    width: max-content;
+}
+
+.social-links a {
+    gap: 20px;
+}
+
+.social-links a i {
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 13px;
+    background-color: #a5a692;
+    color: #003c53;
+
+}
+
+.logo button {
+    padding: 2px; margin: 5px; background-color: transparent; border: none;
+             height: 20px; width: 20px;
+    display: none !important;
+}
+
+.hamico {
+    display: none; 
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero-menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: 100%;
+    }
+
+
+    .hero {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .update-banner {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .update-banner p { font-size: 14px; }
+
+    .disclaimer-ticker { font-size: 12px; }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .logo button { display: contents !important; }
+
+    .logo img { width: 20px; height: auto; }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content h2 {
+        font-size: 16px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .countdown-timer { 
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about, .organisers, .about-speakers, .conference-theme {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .organiser-cards, .speaker-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .organiser-card, .speaker-card {
+        width: 90%;
+    }
+
+    .conference-theme {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .conference-theme h3 {
+        font-size: 25px;
+        text-align: left;
+        
+    }
+
+    .conference-theme p {
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .theme-table {
+        margin: 0; padding: 0;
+    }
+
+    .over-mission {
+        width: 100%;
+        height: auto;
+        background-color: #a5a692;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .over-mission h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .over-mission p {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    hr { display: none; }
+    
+    .box-links-follow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-links-area {
+        text-align: left;
+    }
+
+    .social-links-area h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .social-links-area p {
+        width: 100%;
+    }
+
+    .office-addr {
+        padding-left: 0;   
+    }
+
+    .media-centres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .media-centres a {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .office-addr p {
+        font-size: 14px; width: 100%;
+    }
+
+    .hamico {
+        display: block;
+        font-size: 20px;
+    }
+}
