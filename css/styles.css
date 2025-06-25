@@ -29,7 +29,7 @@ body {
     /* Background color 1 */
     color: #333333;
     /* Text color 1 */
-    overflow-x: hidden;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
     letter-spacing: .1cap;
 
 }
@@ -92,9 +92,10 @@ nav ul li a:hover {
     list-style: none;
     display: flex;
     justify-content: row;
+    
     /* background-color: rgba(159, 177, 184, 0.5); */
     /* Background color #9fb1b8 with slight opacity */
-    gap: 40px;
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
@@ -116,6 +117,7 @@ nav ul li a:hover {
     color: #343434;
     /* Text color 2 */
     font-weight: 200;
+    width: 50%;
     transition: transform 0.3s ease;
 }
 
@@ -317,8 +319,6 @@ nav ul li a:hover {
     font-weight: 700;
     margin-bottom: 15px;
     color: #ffffff;
-    /* H1 ka color #000000 se #9fb1b8 kiya */
-    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5);
     /* Text shadow for depth */
     transition: all 0.3s ease;
 }
@@ -832,8 +832,9 @@ footer hr {
 }
 
 .logo-area {
-    width: 300px;
+    padding: 20px;
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: start;
 }
@@ -844,7 +845,7 @@ footer hr {
     font-weight: 100;
     word-spacing: .3cap ;
     color: #f9f9f9;
-    text-align: justify;
+    text-align: left;
     /* Background color 4 */
     margin-bottom: 10px;
 }
@@ -963,6 +964,13 @@ footer hr {
     display: none; 
 }
 
+.topic-header {
+    font-family: "ArticulatLight";
+    font-size: .8rem;
+    color: #a5a692;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width: 768px) {
 
@@ -991,6 +999,11 @@ footer hr {
         text-align: center;
     }
 
+    .logo-area {
+        width: 100%;
+        padding: 10px;
+    }
+
     .update-banner {
         font-size: 14px;
         width: auto;
@@ -1011,6 +1024,8 @@ footer hr {
     }
 
     .logo button { display: contents !important; }
+
+    .logo a { display: none;}
 
     .logo img { width: 20px; height: auto; }
 
@@ -1034,6 +1049,12 @@ footer hr {
     .countdown-timer { 
         font-size: 12px;
         margin-bottom: 20px;
+    }
+
+    .countdown-timer span {
+        padding: 3px 6px;
+        display: contents;
+        font-size: 18px;
     }
 
     .hero-buttons {
