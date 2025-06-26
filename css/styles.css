@@ -1,11 +1,11 @@
 @font-face {
     font-family: "ArticulatLight";
-    src: url("fonts/ArticulatCFLight.otf") format("opentype");
+    src: url("fonts/Open_Sans/static/OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ArticulatBold";
-    src: url("fonts/ArticulatCFBold.ttf") format("truetype");
+    src: url("fonts/Open_Sans/static/OpenSans-Medium.ttf") format("truetype");
 }
 
 /* Reset aur General Styling */

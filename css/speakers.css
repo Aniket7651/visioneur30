@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "ArticulatLight";
-    src: url("fonts/ArticulatCFLight.otf") format("opentype");
+    font-family: "OpenRegular";
+    src: url("fonts/Open_Sans/static/OpenSans-Medium.ttf") format("opentype");
 }
 
 .flex-container {
@@ -10,10 +10,10 @@
   align-items: center;
   gap: 20px;
 }
-/* 
+
 .flex-container div {
-    width: 200px;
-} */
+    width: 250px;
+}
 
 .flex-container div h2 {
     font-size: 1.2rem;
@@ -27,5 +27,5 @@
 
 .speakers-header p {
     font-size: .9rem;
-    font-family: "ArticulatLight";
+    font-family: "OpenRegular", sans-serif;
 }
