@@ -8,6 +8,21 @@
     src: url("fonts/Open_Sans/static/OpenSans-Medium.ttf") format("truetype");
 }
 
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Adjust as needed */
+  right: 30px; /* Adjust as needed */
+  z-index: 99; /* Ensure it's above other elements */
+  border: none;
+  outline: none;
+  background-color: #115463; /* Example background color */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
 /* Reset aur General Styling */
 * {
     margin: 0;
@@ -21,6 +36,18 @@
 }
 
 a { text-decoration: none; cursor: pointer; }
+
+.view-all {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 20px 30px;
+    background-color: #a5a692; /* Green se replace kiya #193046 */
+    color: #115463; /* Background color 4 */
+    border-radius: 30px;
+    font-family: "ArticulatBold";
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
 
 body {
     font-family: "ArticulatBold";
@@ -541,7 +568,7 @@ nav ul li a:hover {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 500px;
     transition: transform 0.3s ease;
 }
 
@@ -557,7 +584,7 @@ nav ul li a:hover {
 }
 
 .organiser-card h4 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #011f26;

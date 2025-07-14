@@ -32,6 +32,7 @@
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="agenda.html"><i class="fas fa-calendar-alt"></i> Programme & Sessions</a></li>
+                <li><a href="speakers.html"><i class="fa-solid fa-person-circle-plus"></i> Funds</a></li>
                 <li><a href="speakers.html"><i class="fas fa-microphone"></i> Speakers & Moderators</a></li>
             </ul>
         </nav>
@@ -41,7 +42,7 @@
 
         <h1>Programme & Sessions</h1>
         <p class="intro-text">
-            The VISION Europe 2025 Conference takes place over two full days of strategic dialogue.
+            The VISION Europe 2030 Conference takes place over two full days of strategic dialogue.
             Below is the full session grid, organized by date.
         </p>
 
@@ -181,6 +182,7 @@ Exploring AI-powered multimorbidity prevention and digital biomarker platforms.
     </section>
 
     <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="logo-area">
             <img src="Conferimgs/eapmlogo_white.png" alt="VISION Europe 2030 Logo white">
@@ -194,7 +196,8 @@ Exploring AI-powered multimorbidity prevention and digital biomarker platforms.
             <h1>Contact Us</h1>
             <p>If you have any questions or need more information about VISION Europe 2030, please reach out to us:</p>
 
-            <a class="email-btn" href="mailto:denishorgan@euapm.eu"><i class="fa-solid fa-paper-plane"></i> E-mail Us</a>
+            <a class="email-btn" href="mailto:denishorgan@euapm.eu"><i class="fa-solid fa-paper-plane"></i> E-mail
+                Us</a>
 
             <div class="office-addr">
                 <h2>Office</h2>
@@ -211,30 +214,63 @@ Exploring AI-powered multimorbidity prevention and digital biomarker platforms.
             </div> -->
 
             <section class="box-links-follow">
-                <section>
+                <section style="width:100%">
                     <h1>Go Back On</h1>
                     <div class="go-back-links">
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
-                        <a href="#">Register</a>
+                        <a href="https://forms.gle/ueXNbQA7K2FzKkJ88">Register</a>
+                        <a href="agenda.html">Agenda</a>
+                        <a href="">Privacy Policy</a>
                     </div>
+
                 </section>
                 <section>
                     <h1>Follow Us</h1>
                     <div class="social-links">
                         <a href="https://x.com/euapmbrussels?ref_src=twsrc%5Etfw" target="_blank"><i
                                 class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/company/european-alliance-for-personalised-medicine-eapm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/company/european-alliance-for-personalised-medicine-eapm/"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <p style="text-align: justify;">
+                        <img src="Conferimgs/Co-fundedEU_POS.jpg" alt="EU4Health"
+                            style="width: 90%; height: auto;"></img><br>
+                        <b>Co-funded by the European Union.</b></br>
+                        Views and opinions expressed are however those of the author(s) only and do not necessarily
+                        reflect those of the European Union or the European Health and Digital Executive Agency (HaDEA).
+                        Neither the European Union nor the granting authority can be held responsible for them.
+                    </p>
                     <p>&copy; 2024 EAPM. All rights reserved.</p>
                 </section>
 
         </div>
 
         </div>
-
     </footer>
+    <button id="scrollToTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="font-size: 30px;"></i></button>
     <script>
+
+        // Get the button element
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
         function MobileHamBurgerMenu() {
             var x = document.getElementById("nav-menu");
             if (x.style.display === "block") {
