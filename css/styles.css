@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     src: url("fonts/Open_Sans/static/OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "ArticulatBold";
+    font-family: "OpenSansBold";
     src: url("fonts/Open_Sans/static/OpenSans-Medium.ttf") format("truetype");
 }
 
@@ -44,13 +44,13 @@ a { text-decoration: none; cursor: pointer; }
     background-color: #a5a692; /* Green se replace kiya #193046 */
     color: #115463; /* Background color 4 */
     border-radius: 30px;
-    font-family: "ArticulatBold";
+    font-family: "OpenSansBold";
     font-weight: 600;
     transition: background-color 0.3s ease;
 }
 
 body {
-    font-family: "ArticulatBold";
+    font-family: "OpenSansBold";
     background-image: url("https://euapm.eu/wp-content/uploads/2023/11/object_1.svg");
     background-repeat: no-repeat;
     /* Background color 1 */
@@ -233,7 +233,7 @@ nav ul li a:hover {
     width: 200px;
     padding: 10px;
     font-weight: 600;
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     /* Font family change kiya */
 }
 
@@ -507,7 +507,7 @@ nav ul li a:hover {
 }
 
 .about-text p {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: 20px;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -592,7 +592,7 @@ nav ul li a:hover {
 }
 
 .organiser-card p {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: 18px;
     line-height: 1.6;
     color: #333333;
@@ -636,7 +636,7 @@ nav ul li a:hover {
 }
 
 .slide-light p {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: 16px;
     color: #333333;
     /* Text color 1 */
@@ -749,7 +749,7 @@ nav ul li a:hover {
 }
 
 .conference-theme p {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 40px;
@@ -801,7 +801,7 @@ nav ul li a:hover {
 
 /* Text styling */
 .image-text {
-    font-family: "ArticulatBold";
+    font-family: "OpenSansBold";
     font-size: 1.1rem; /* Readable font size */
     font-weight: 600; /* Bold text */
     color: #333333; /* Dark text for contrast */
@@ -834,7 +834,7 @@ nav ul li a:hover {
 }
 
 .over-mission p {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: 18px;
     color: #333333;
     /* Text color 1 */
@@ -842,7 +842,7 @@ nav ul li a:hover {
 
 /* Footer Styling */
 footer {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     padding: 60px 90px;
     background-color: #003c53;
     /* Background color 3 */
@@ -867,7 +867,7 @@ footer hr {
 }
 
 .logo-area p {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: 18px;
     font-weight: 100;
     word-spacing: .3cap ;
@@ -895,7 +895,7 @@ footer hr {
 }
 
 .social-links-area h1 {
-    font-family: "ArticulatBold";
+    font-family: "OpenSansBold";
     font-size: 2rem;
     color: #a5a692;
     margin-bottom: 10px;
@@ -934,7 +934,7 @@ footer hr {
 .media-centres a {
     padding: 10px 10px 20px 20px;
     gap: 20px;
-    font-family: "ArticulatBold";
+    font-family: "OpenSansBold";
     font-weight: 200;
     transition: .3s ease;
 }
@@ -964,7 +964,7 @@ footer hr {
 .go-back-links a {
     text-decoration: none;
     color: #a5a692;
-    font-family: "ArticulatBold";
+    font-family: "OpenSansBold";
     width: max-content;
 }
 
@@ -992,7 +992,7 @@ footer hr {
 }
 
 .topic-header {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: .8rem;
     color: #a5a692;
     margin-bottom: 10px;

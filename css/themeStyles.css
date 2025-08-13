@@ -13,7 +13,7 @@
 }
 
 .theme-list {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     text-align: justify;
     padding-left: 15%;
     padding-right: 15%;
@@ -34,7 +34,7 @@ h4 {
 }
 
 .theme-para-main {
-    font-family: "ArticulatLight";
+    font-family: "OpenSansLight";
     font-size: 18px;
     line-height: 1.8;
     color: #333;
