@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "OpenLight";
+    src: url("fonts/Open_Sans/static/OpenSans-Light.ttf") format("truetype");
+}
+
+
+.privacy-context {
+    font-size: 1.1rem;
+    padding: 80px 50px;
+    /* Background color 4 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: center;
+}
+
+.privacy-context div h1 {
+    color: #011f26;
+    /* Heading color */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.privacy-context div h2 {
+    color: #034a5a;
+    /* Heading color */
+    text-align: center;
+    font-size: 1.1rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 20px;
+}
+
+.privacy-context div h3 {
+    font-size: 1.5rem;
+}
+
+.privacy-context div div p {
+    font-family: "OpenLight";
+    margin-bottom: 15px;
+    text-align: justify;
+    padding: 30px 30px;
+}
+
+.Download-div-text {
+    padding: 30px;
+    background-color: #a5a692;
+}
+
+.Download-div-text a {
+    color: white;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .privacy-context {
+        padding: 30px 20px;
+    }
+
+    .privacy-context div h2 {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+}
