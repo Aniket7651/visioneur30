@@ -380,7 +380,6 @@ nav ul li a:hover {
 }
 
 .meeting-links {
-    font-size: 28px;
     font-weight: 400;
     margin-bottom: 20px;
     color: #333333;
@@ -512,6 +511,9 @@ nav ul li a:hover {
     .meeting-links p {
         font-size: 40px;
     }
+}
+@media (max-width: 320px) {
+    
 }
 
 @media (width: 1024px) {
