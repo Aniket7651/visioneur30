@@ -379,26 +379,48 @@ nav ul li a:hover {
     /* Background color 4 as text color */
 }
 
-.countdown-timer {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: #e8e8e8;
+.meeting-links {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #333333;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     /* Green se replace kiya #193046 */
 }
 
-.countdown-timer span {
-    background-color: rgba(164, 252, 255, 0.5);
-    /* Background color 5 with 50% opacity */
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 0 5px;
+.meeting-links p {
+    margin: 5px;
+    font-weight: 900;
+    color: #000000;
+    padding-top: 10px;
 }
+
 
 .hero-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.zoom-link {
+    background-color: #003c53;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.day {
+    background-color: #d7ecff8a;
+    color: #000000;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.day div {
+    height: 100px;
 }
 
 .btn-primary {
@@ -413,6 +435,12 @@ nav ul li a:hover {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor:auto;
+  opacity: 0.6;
 }
 
 .btn-primary i {
@@ -474,6 +502,15 @@ nav ul li a:hover {
     .venue-icon img {
         width: 300px;
         height: auto;
+    }
+    .day {
+        margin-bottom: 20px;
+    }
+    .day h3 {
+        font-size: 20px;
+    }
+    .meeting-links p {
+        font-size: 40px;
     }
 }
 
