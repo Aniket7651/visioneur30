@@ -70,7 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 8px;
     /* background-color: rgba(159, 177, 184, 0.5); */
     /* Background color #9fb1b8 with slight opacity */
     position: sticky;

@@ -1,0 +1,123 @@
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.speakers-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.speaker-box {
+    flex: 1;
+    min-width: 300px;
+    background: none;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.speaker-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.speaker-box:hover::before {
+    opacity: 0.1;
+}
+
+.content-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 315px;
+    /* Match video height */
+}
+
+.speaker-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.speaker-description {
+    font-size: 1em;
+    line-height: 1.5;
+
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.subscribe-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #c0392b;
+}
+
+.speaker-video {
+    flex: 1;
+    height: 315px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .speakers-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .speaker-box {
+        flex-direction: column;
+        min-width: 300px;
+        max-width: 400px;
+    }
+
+    .speaker-video {
+        height: 200px;
+        width: 100%;
+    }
+
+    .content-right {
+        min-height: auto;
+    }
+}
