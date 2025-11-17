@@ -20,6 +20,16 @@
 
 </head>
 
+
+<div class="img-popup-overlay" id="imgPopup">
+    <div class="popup-controls">
+        <button class="popup-btn" id="downloadBtn" title="Download"><i class="fa fa-download"></i></button>
+        <button class="popup-btn" id="closePopup" title="Close">✕</button>
+    </div>
+    <img src="" alt="Large Image" class="popup-big-img" id="popupImage">
+</div>
+
+
 <body>
 
     <div class="cookie-popup" id="cookie-popup">
@@ -56,186 +66,188 @@
     <section class="cartoon-section">
         <div class="speakers-header">
             <h1 class="section-title centered">Live Cartoons from Brussels</h1>
-            <p class="para">During VISION EUROPE 2030, a professional cartoonist captured key ideas and discussions in real
-            time, transforming complex debates into clear and engaging visual stories. This gallery brings together all the
-            live illustrations created throughout the two days in
-            Brussels, each highlighting a core message, theme, or insight from the event.</p>
+            <p class="para">During VISION EUROPE 2030, a professional cartoonist captured key ideas and discussions in
+                real
+                time, transforming complex debates into clear and engaging visual stories. This gallery brings together
+                all the
+                live illustrations created throughout the two days in
+                Brussels, each highlighting a core message, theme, or insight from the event.</p>
         </div>
         <div class="speakers-container grid-container">
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Access.jpg" alt="">
+                <img src="Conferimgs/VELogo/Access.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Access.jpg">
                 <h2>Access</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Accurate.jpg" alt="">
+                <img src="Conferimgs/VELogo/Accurate.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Accurate.jpg">
                 <h2>Accurate</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Brecision.jpg" alt="">
+                <img src="Conferimgs/VELogo/Brecision.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Brecision.jpg">
                 <h2>Brecision</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Cancer_Imaging.jpg" alt="">
+                <img src="Conferimgs/VELogo/Cancer_Imaging.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Cancer_Imaging.jpg">
                 <h2>Cancer Imaging</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Capital.jpg" alt="">
+                <img src="Conferimgs/VELogo/Capital.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Capital.jpg">
                 <h2>Capital</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Collaboration.jpg" alt="">
+                <img src="Conferimgs/VELogo/Collaboration.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Collaboration.jpg">
                 <h2>Collaboration</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Cross_border_access.jpg" alt="">
+                <img src="Conferimgs/VELogo/Cross_border_access.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Cross_border_access.jpg">
                 <h2>Cross Border Access</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Data_Harmony.jpg" alt="">
+                <img src="Conferimgs/VELogo/Data_Harmony.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Data_Harmony.jpg">
                 <h2>Data Harmony</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Democracy.jpg" alt="">
+                <img src="Conferimgs/VELogo/Democracy.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Democracy.jpg">
                 <h2>Democracy</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Digital_Inclusion.jpg" alt="">
+                <img src="Conferimgs/VELogo/Digital_Inclusion.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Digital_Inclusion.jpg">
                 <h2>Digital Inclusion</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Disruption.jpg" alt="">
+                <img src="Conferimgs/VELogo/Disruption.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Disruption.jpg">
                 <h2>Disruption</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Equity.jpg" alt="">
+                <img src="Conferimgs/VELogo/Equity.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Equity.jpg">
                 <h2>Equity</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Fail_space.jpg" alt="">
+                <img src="Conferimgs/VELogo/Fail_space.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Fail_space.jpg">
                 <h2>Fail Space</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Genome_Access.jpg" alt="">
+                <img src="Conferimgs/VELogo/Genome_Access.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Genome_Access.jpg">
                 <h2>Genome Access</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Horse_AI.jpg" alt="">
+                <img src="Conferimgs/VELogo/Horse_AI.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Horse_AI.jpg">
                 <h2>Horse AI</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Horse_Committee.jpg" alt="">
+                <img src="Conferimgs/VELogo/Horse_Committee.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Horse_Committee.jpg">
                 <h2>Horse Committee</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Liberation.jpg" alt="">
+                <img src="Conferimgs/VELogo/Liberation.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Liberation.jpg">
                 <h2>Liberation</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Mediacal_Industria_Complex.jpg" alt="">
+                <img src="Conferimgs/VELogo/Mediacal_Industria_Complex.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Mediacal_Industria_Complex.jpg">
                 <h2>Mediacal Industria Complex</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Patient_Expert.jpg" alt="">
+                <img src="Conferimgs/VELogo/Patient_Expert.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Patient_Expert.jpg">
                 <h2>Patient Expert</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Patient_rights.jpg" alt="">
+                <img src="Conferimgs/VELogo/Patient_rights.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Patient_rights.jpg">
                 <h2>Patient Rights</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Patient_timeline.JPG" alt="">
+                <img src="Conferimgs/VELogo/Patient_timeline.JPG" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Patient_timeline.JPG">
                 <h2>Patient Timeline</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Population_Communication.jpg" alt="">
+                <img src="Conferimgs/VELogo/Population_Communication.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Population_Communication.jpg">
                 <h2>Population Communication</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Precisions.jpg" alt="">
+                <img src="Conferimgs/VELogo/Precisions.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Population_Communication.jpg">
                 <h2>Precisions</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Quality_Cost.jpg" alt="">
+                <img src="Conferimgs/VELogo/Quality_Cost.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Quality_Cost.jpg">
                 <h2>Quality Cost</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Science_Diplomacy.jpg" alt="">
+                <img src="Conferimgs/VELogo/Science_Diplomacy.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Science_Diplomacy.jpg">
                 <h2>Science Diplomacy</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Siri.jpg" alt="">
+                <img src="Conferimgs/VELogo/Siri.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Siri.jpg">
                 <h2>Siri</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Smart_Watch.jpg" alt="">
+                <img src="Conferimgs/VELogo/Smart_Watch.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Smart_Watch.jpg">
                 <h2>Smart Watch</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Disease.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Disease.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Disease.jpg">
                 <h2>The Disease</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Dutchman.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Dutchman.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Dutchman.jpg">
                 <h2>The Dutchman</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Ecosystem.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Ecosystem.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Ecosystem.jpg">
                 <h2>The Ecosystem</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Frame.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Frame.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Frame.jpg">
                 <h2>The Frame</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Gap.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Gap.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Gap.jpg">
                 <h2>The Gap</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Genomes.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Genomes.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Genomes.jpg">
                 <h2>The Genomes</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Hill.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Hill.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Hill.jpg">
                 <h2>The Hill</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Ocean.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Ocean.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Ocean.jpg">
                 <h2>The Ocean</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Rules.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Rules.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Rules.jpg">
                 <h2>The Rules</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_shark.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_shark.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_shark.jpg">
                 <h2>The Shark</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Stick.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Stick.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Stick.jpg">
                 <h2>The Stick</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Villain.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Villain.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Villain.jpg">
                 <h2>The Villain</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_Whole_Patient.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_Whole_Patient.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_Whole_Patient.jpg">
                 <h2>The Whole Patient</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/The_World.jpg" alt="">
+                <img src="Conferimgs/VELogo/The_World.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/The_World.jpg"> 
                 <h2>The World</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Translational_Gap.jpg" alt="">
+                <img src="Conferimgs/VELogo/Translational_Gap.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Translational_Gap.jpg">
                 <h2>Translational Gap</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Ursula.jpg" alt="">
+                <img src="Conferimgs/VELogo/Ursula.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Ursula.jpg">
                 <h2>Ursula</h2>
             </div>
             <div class="speaker-card">
-                <img src="Conferimgs/VELogo/Wrong_Data.jpg" alt="">
+                <img src="Conferimgs/VELogo/Wrong_Data.jpg" alt="" class="zoom-img" data-full="Conferimgs/VELogo/Wrong_Data.jpg">
                 <h2>Wrong Data</h2>
             </div>
         </div>
@@ -340,6 +352,40 @@
             }
         }
 
+
+        document.querySelectorAll('.zoom-img').forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', function () {
+                const fullImg = this.dataset.full || this.src;
+                document.getElementById('popupImage').src = fullImg;
+                document.getElementById('imgPopup').classList.add('active');
+
+                // Download button ka link set karo
+                document.getElementById('downloadBtn').onclick = function () {
+                    const a = document.createElement('a');
+                    a.href = fullImg;
+                    a.download = fullImg.split('/').pop().split('?')[0]; // filename
+                    a.click();
+                };
+            });
+        });
+
+        // Close buttons
+        document.getElementById('closePopup').onclick = function () {
+            document.getElementById('imgPopup').classList.remove('active');
+        };
+        document.getElementById('imgPopup').onclick = function (e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+            }
+        };
+
+        // ESC key se bhi band ho jayega
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                document.getElementById('imgPopup').classList.remove('active');
+            }
+        });
     </script>
 
 </body>
