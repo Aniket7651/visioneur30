@@ -803,6 +803,7 @@ nav ul li a:hover {
     line-height: 1.8;
     margin-bottom: 40px;
     color: #333333;
+    background-color: white;
     /* Text color 1 */
 }
 
@@ -955,7 +956,6 @@ footer hr {
 .email-btn {
     background-color: transparent;
     color: #ffffff;
-    margin: 30px;
     border-radius: 25px;
     border: 1px solid #a5a692;
     padding: 10px 20px;
@@ -1002,7 +1002,6 @@ footer hr {
 }
 
 .go-back-links {
-    padding: 10px 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
