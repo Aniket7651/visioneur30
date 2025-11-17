@@ -807,6 +807,12 @@ nav ul li a:hover {
     /* Text color 1 */
 }
 
+.conference-theme .blue-text {
+    color: #38dffe;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
 .theme-table {
     max-width: 1200px; /* Limit max width for large screens */
     margin: 0 200px 0; /* Center the table */
