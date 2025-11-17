@@ -16,3 +16,25 @@
     gap: 10px;
     padding: 20px;
 }
+
+@media (max-width: 425px) {
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+        padding: 0;
+    }
+
+    .cartoon-section {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        padding: 0;
+    }
+
+    .cartoon-section {
+        padding: 10px 20px;
+    }
+}

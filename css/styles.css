@@ -799,8 +799,9 @@ nav ul li a:hover {
 
 .conference-theme p {
     font-family: "OpenSansLight";
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
+    font-weight: 900;
     margin-bottom: 40px;
     color: #333333;
     background-color: white;
@@ -809,7 +810,7 @@ nav ul li a:hover {
 
 .conference-theme .blue-text {
     color: #38dffe;
-    font-weight: 600;
+    font-weight: 900;
     transition: all 0.3s ease;
 }
 
@@ -1224,7 +1225,6 @@ footer hr {
     .over-mission {
         width: 100%;
         height: auto;
-        background-color: #a5a692;
         padding: 20px;
         margin-top: 20px;
     }

@@ -1,0 +1,13 @@
+
+.section-container h2 {
+    text-align: left;
+}
+
+.section-container p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.margin-top {
+    margin-top: 40px;
+}

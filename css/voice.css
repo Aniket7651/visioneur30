@@ -101,7 +101,9 @@
 @media (max-width: 768px) {
 
     .section-container {
-        padding-bottom: 40px;
+        padding: 40px 10px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .speakers-grid {
@@ -122,6 +124,11 @@
 
     .content-right {
         min-height: auto;
+    }
+
+    .view-all {
+        padding: 20px 30px;
+        font-size: 1rem;
     }
 }
 
@@ -150,7 +157,7 @@
 .gallery-grid .caption {
     text-align: center;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #555555;
 }
@@ -166,6 +173,7 @@
 
 .margin-top {
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .margin-bottom {
@@ -174,8 +182,10 @@
 
 @media screen and (max-width: 480px) {
     .section-title {
-        font-size: 36px;
-        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
     }
 
     .speaker-description {
