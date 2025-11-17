@@ -1,15 +1,15 @@
 .section-container {
-    max-width: 1200px;
+    padding: 20px 50px;
+    color: #193046;
     margin: 0 auto;
     text-align: center;
 }
 
 .section-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #2c3e50;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
     margin-bottom: 40px;
-    text-transform: uppercase;
 }
 
 .speakers-grid {
@@ -55,7 +55,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 315px;
     /* Match video height */
 }
@@ -68,14 +68,12 @@
 }
 
 .speaker-description {
-    font-size: 1em;
+    font-family: "OpenSansLight";
+    font-size: 20px;
     line-height: 1.5;
-
-    display: flex;
-    align-items: center;
-    color: #555;
     margin-bottom: 20px;
-    flex-grow: 1;
+    color: #333333;
+    font-weight: 100;
 }
 
 .subscribe-btn {
