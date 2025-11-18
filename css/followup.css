@@ -1,6 +1,8 @@
 
 .section-container h2 {
     text-align: left;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .section-container p {
