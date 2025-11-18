@@ -801,7 +801,6 @@ nav ul li a:hover {
     font-family: "OpenSansLight";
     font-size: 20px;
     line-height: 1.8;
-    font-weight: 900;
     margin-bottom: 40px;
     color: #333333;
     background-color: white;
@@ -811,6 +810,7 @@ nav ul li a:hover {
 .conference-theme .blue-text {
     color: #38dffe;
     font-weight: 900;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 
@@ -860,7 +860,7 @@ nav ul li a:hover {
 .image-text {
     font-family: "OpenSansBold";
     font-size: 1.1rem; /* Readable font size */
-    font-weight: 600; /* Bold text */
+    font-weight: 900; /* Bold text */
     color: #333333; /* Dark text for contrast */
     padding: 15px; /* Space around text */
     margin: 0; /* Remove default margins */
