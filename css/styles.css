@@ -582,7 +582,7 @@ nav ul li a:hover {
 
 /* Organisers Section Styling */
 .organisers {
-    padding: 80px 50px;
+    padding: 50px 50px;
     /* background-color: rgba(239, 239, 239, 0.5); */
     /* Background color 5 with 50% opacity */
     text-align: center;
@@ -782,7 +782,7 @@ nav ul li a:hover {
 
 /* Conference Section Styling */
 .conference-theme {
-    padding: 50px 50px;
+    padding: 0px 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
