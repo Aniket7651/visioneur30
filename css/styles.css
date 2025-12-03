@@ -573,10 +573,10 @@ nav ul li a:hover {
 
 .btn-more {
     background-color: transparent;
-    color: rgb(165,166,146);
+    color: #38dffe;
     /* Text color 4 */
     padding: 10px 20px;
-    border: 2px solid #a5a692;
+    border: 2px solid #38dffe;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
@@ -589,9 +589,9 @@ nav ul li a:hover {
 }
 
 .btn-more:hover {
-    background-color: #a5a692;
+    background-color: #38dffe;
     /* Text color 4 */
-    color: #f9f9f9;
+    color: #fff;
     /* Background color 4 */
 }
 
