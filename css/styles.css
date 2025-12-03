@@ -595,6 +595,13 @@ nav ul li a:hover {
     /* Background color 4 */
 }
 
+.flex-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Organisers Section Styling */
 .organisers {
     padding: 50px 50px;
