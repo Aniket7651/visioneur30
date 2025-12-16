@@ -17,3 +17,13 @@
 .blue {
     color: #38dffe;
 }
+
+.unorderd-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+b {
+    font-weight: 900;
+}
