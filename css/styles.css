@@ -860,6 +860,7 @@ nav ul li a:hover {
 .conference-theme .blue-text {
     color: #38dffe;
     font-weight: 900;
+    background-color: #ffffff;
     font-size: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -1270,10 +1271,16 @@ footer hr {
     }
     .conference-theme .blue-text {
         font-size: 1.2rem;
+        
     }
 
     .theme-table {
         margin: 0; padding: 0;
+    }
+
+    .row div {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .over-mission {
